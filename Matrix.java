@@ -17,9 +17,10 @@ public class Matrix {
     {
         String matrixStr = "";
         matrixStr = "[";
-        for(int i=0; i<matrix.length; i++)
+        //Used the wrong dimension of the matrix
+        for(int i=0; i<matrix[0].length; i++)
         {
-            if(i==matrix.length-1)
+            if(i==matrix[0].length-1)
                 matrixStr += matrix[row][i] + "]";
             else
                 matrixStr += matrix[row][i] + ", ";
